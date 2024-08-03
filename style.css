@@ -170,3 +170,136 @@ body {
     width: 36px;
     height: 36px;
 }
+
+.main-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 180px;
+}
+
+.main-tools-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #ffffffe6;
+}
+
+.main-tools-descr {
+    padding: 25px 0 90px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: #ffffff8c;
+    width: 40%;
+}
+
+.main-tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 24px;
+    row-gap: 100px;
+}
+
+.main-tools-wrapper-card {
+    flex: 1 1 30%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    transition: .3s;
+    background: var(--black);
+}
+
+.main-tools-wrapper-card:hover {
+    background: url(assets/images/rectangle-bg.jpg) no-repeat center/cover;
+    margin-top: -20px;
+}
+
+.main-tools-wrapper-card-name {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.main-tools-wrapper-card-name-img {
+    width: 65px;
+    height: 65px;
+}
+
+.main-tools-wrapper-card-name-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.main-tools-wrapper-card-name-text-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffffc7;
+}
+
+.main-tools-wrapper-card-name-text-descr {
+    font-size: 18px;
+    color: #ffa5378c;
+}
+
+.main-tools-wrapper-card-descr {
+    line-height: 187%;
+    color: #ffffff8c;
+    padding: 30px 0;
+}
+
+.main-tools-wrapper-card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-tools-wrapper-card-actions-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.main-tools-wrapper-card-actions-a {
+    font-weight: 600;
+    color: #ffffff8c;
+}
+
+.main-tools-a {
+    margin-top: 100px;
+    border: 1px solid #ffffff1a;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--accent);
+    padding: 17px 38px;
+}
+
+.main-brands {
+    display: flex;
+    flex-direction: column;
+    margin: 0 108px 200px;
+    padding: 55px 82px;
+    border-radius: 25px;
+    background: url(assets/images/line-bg.jpg) no-repeat center/cover;
+    row-gap: 55px;
+    align-items: center;
+}
+
+.main-brands-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffffcc;
+}
+
+.main-brands-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
