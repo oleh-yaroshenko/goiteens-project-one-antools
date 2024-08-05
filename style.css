@@ -38,6 +38,11 @@ body {
 .header-ul-li-a {
     font-weight: 500;
     color: #ffffff8c;
+    transition: .3s;
+}
+
+.header-ul-li-a:hover {
+    color: var(--white);
 }
 
 .header-ul-li:nth-child(2) {
@@ -64,6 +69,11 @@ body {
     font-weight: 600;
     color: #ffffffc7;
     padding-right: 40px;
+    transition: .3s;
+}
+
+.header-account-a-login:hover {
+    color: var(--white);
 }
 
 .header-account-a-signup {
@@ -140,7 +150,7 @@ body {
 
 .main-hero-input-field {
     font-size: 14px;
-    color: #ffffff61;
+    color: var(--white);
     background: none;
     outline: none;
     width: 290px;
@@ -169,6 +179,7 @@ body {
 .main-hero-socialmedia-img {
     width: 36px;
     height: 36px;
+    cursor: pointer;
 }
 
 .main-tools {
@@ -218,6 +229,7 @@ body {
 .main-tools-wrapper-card:hover {
     background: url(assets/images/rectangle-bg.jpg) no-repeat center/cover;
     margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .main-tools-wrapper-card-name {
@@ -282,6 +294,19 @@ body {
     column-gap: 12px;
 }
 
+.main-tools-wrapper-card-actions-wrapper-heart,
+.main-tools-wrapper-card-actions-wrapper-folder {
+    transition: .3s;
+    border-radius: 8px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.main-tools-wrapper-card-actions-wrapper-heart:hover,
+.main-tools-wrapper-card-actions-wrapper-folder:hover {
+    background: var(--light-black);
+}
+
 .main-tools-wrapper-card-actions-a {
     font-weight: 600;
     color: #ffffff8c;
@@ -303,6 +328,12 @@ body {
     font-size: 20px;
     color: var(--accent);
     padding: 17px 38px;
+    transition: .3s;
+}
+
+.main-tools-a:hover {
+    background: var(--accent);
+    color: var(--white);
 }
 
 .main-brands {
@@ -328,6 +359,10 @@ body {
     align-items: center;
     width: 100%;
     align-items: start;
+}
+
+.main-brands-wrapper-img:hover {
+    cursor: pointer;
 }
 
 .main-newcomer {
@@ -389,6 +424,7 @@ body {
 .main-newcomer-wrapper-card:hover {
     background: url(assets/images/square-bg.jpg) no-repeat center/cover;
     margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .main-newcomer-wrapper-card-name {
@@ -450,6 +486,19 @@ body {
     display: flex;
     align-items: center;
     column-gap: 12px;
+}
+
+.main-newcomer-wrapper-card-actions-wrapper-heart,
+.main-newcomer-wrapper-card-actions-wrapper-folder {
+    transition: .3s;
+    border-radius: 8px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.main-newcomer-wrapper-card-actions-wrapper-heart:hover,
+.main-newcomer-wrapper-card-actions-wrapper-folder:hover {
+    background: var(--light-black);
 }
 
 .main-newcomer-wrapper-card-actions-a {
@@ -589,6 +638,7 @@ body {
     padding: 8px 8px 8px 55px;
     position: relative;
     margin-bottom: 110px;
+    width: 100%;
 }
 
 .main-join-input::after {
@@ -602,11 +652,9 @@ body {
 
 .main-join-input-field {
     font-size: 14px;
-    color: #ffffff61;
+    color: var(--white);
     background: none;
     outline: none;
-    width: 290px;
-    margin-right: 10px;
 }
 
 .main-join-input-field::placeholder {
@@ -672,4 +720,9 @@ body {
 .footer-row-ul-li-a {
     font-weight: 500;
     color: #ffffff8c;
+    transition: .3s;
+}
+
+.footer-row-ul-li-a:hover {
+    color: var(--white);
 }
