@@ -523,7 +523,7 @@ body {
 
 .main-carousel-wrapper {
     display: flex;
-    transition: .5s;
+    transition: .3s;
     width: 100%;
 }
 
@@ -609,6 +609,7 @@ body {
     transform: translateX(-50%);
     display: flex;
     column-gap: 18px;
+    align-items: center;
 }
 
 .main-carousel-pagination .main-carousel-pagination-dot {
