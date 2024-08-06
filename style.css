@@ -514,55 +514,36 @@ body {
     color: var(--white);
 }
 
-.main-reviews {
-    padding: 0 108px 250px;
+.main-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 108px;
+    margin-bottom: 350px;
+}
+
+.main-carousel-wrapper {
+    display: flex;
+    transition: .5s;
     width: 100%;
 }
 
-.main-reviews-card {
+.main-carousel-wrapper-slide {
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 140px 100px;
     position: relative;
 }
 
-.main-reviews-card::before {
-    content: "";
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    background: url(assets/icons/chevron-left.svg);
-    left: -50px;
-}
-
-.main-reviews-card::after {
-    content: "";
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    background: url(assets/icons/chevron-right.svg);
-    right: -50px;
-}
-
-.main-reviews-card-img {
+.main-carousel-wrapper-slide-img {
     width: 399px;
     height: 492px;
     position: relative;
 }
 
-.main-reviews-card-img::after {
-    content: "";
-    position: absolute;
-    width: 168px;
-    height: 8px;
-    background: url(assets/icons/swiper.svg);
-    bottom: -100px;
-    left: 107%;
-}
-
-.main-reviews-card-img-text {
+.main-carousel-wrapper-slide-img-text {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -574,17 +555,17 @@ body {
     left: 130px;
 }
 
-.main-reviews-card-img-text-title {
+.main-carousel-wrapper-slide-img-text-title {
     font-weight: 500;
     font-size: 26px;
     color: #fffdfdc7;
 }
 
-.main-reviews-card-img-text-descr {
+.main-carousel-wrapper-slide-img-text-descr {
     color: #fffdfd8c;
 }
 
-.main-reviews-card-descr {
+.main-carousel-wrapper-slide-descr {
     width: 50%;
     font-size: 14px;
     line-height: 214%;
@@ -592,7 +573,7 @@ body {
     position: relative;
 }
 
-.main-reviews-card-descr::before {
+.main-carousel-wrapper-slide-descr::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -602,6 +583,45 @@ body {
     transform: rotate(18deg);
     top: -50px;
     left: -60px;
+}
+
+.main-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 108px;
+}
+
+.next-button {
+    right: 108px;
+}
+
+.main-carousel-pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 18px;
+}
+
+.main-carousel-pagination .main-carousel-pagination-dot {
+    width: 44px;
+    height: 6px;
+    background: var(--light-black);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.main-carousel-pagination .main-carousel-pagination-dot.active {
+    background-color: var(--accent);
+    height: 8px;
 }
 
 .main-join {
